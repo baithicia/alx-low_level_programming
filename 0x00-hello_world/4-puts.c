@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-// program to put a puzzle
+/* program to run puzzle  */
+
 int main(void)
 {
 
