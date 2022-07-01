@@ -1,7 +1,8 @@
-#include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
-int main(void) 
+#include <time.h>
+int main(void)
+{
 int d, p;
 for (d = '0'; d < '9'; d++)
 {
@@ -14,7 +15,8 @@ putchar(p);
 if (d == '8' && p == '9')
 continue;
 putchar(',');
-putchar(' ');}
+putchar(' ');
+}
 }
 }
 putchar('\n');
