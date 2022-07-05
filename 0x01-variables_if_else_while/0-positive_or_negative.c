@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+/**
+ * main - assigns a random number and determine
+ * whether it is a positive or negative
+ * Return -Always 0 (success)
+ */
 int main(void)
 {
 int n;
