@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -7,9 +7,7 @@
 * @b: An input integer
 * Return: Always 0
 */
-
 int mul(int a, int b);
 {
-
 return (a * b);
 }
