@@ -19,7 +19,6 @@ _putchar('\n');
 }
 }
 }
-
 /**
 * putformat - formatted characters to output
 * @n: number to format
