@@ -1,2 +1,2 @@
-started learing c programming today
-i am so excited!
+0x03-debugging
+This Readme is about debugging my project
