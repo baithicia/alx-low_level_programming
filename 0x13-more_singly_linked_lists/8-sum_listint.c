@@ -1,43 +1,17 @@
 #include "lists.h"
 /**
-* insert_nodeint_at_index - inserts a new node at a given position.
+* sum_listint - returns the sum of all the data (n) of a listint_t list.
 * @head: pointer to the list.
-* @idx: position to add the node.
-* @n: data for the new node.
-* Return: the address of the new node, or NULL if it failed
+* Return: sum of all data in the list, 0 if the lost is empty.
 **/
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
+int sum_listint(listint_t *head)
 {
-listint_t *aux_node = *head;
-listint_t *new_node;
-unsigned int index;
-unsigned int cont = 0;
-/* create node */
-new_node = malloc(sizeof(listint_t));
-if (new_node == NULL)
-return (NULL);
-new_node->n = n;
-/* border case for insert at the beginning */
-if (idx == 0)
+listint_t *node = head;
+int sum = 0;
+while (node)
 {
-new_node->next = *head;
-*head = new_node;
-return (*head);
+sum += node->n;
+node = node->next;
 }
-/* search of position to insert */
-index = idx - 1;
-while (aux_node && cont != index)
-{
-cont++;
-aux_node = aux_node->next;
-}
-/* general case */
-if (cont == index && aux_node)
-{
-new_node->next = aux_node->next;
-aux_node->next = new_node;
-return (new_node);
-}
-free(new_node);
-return (NULL);
+return (sum);
 }
