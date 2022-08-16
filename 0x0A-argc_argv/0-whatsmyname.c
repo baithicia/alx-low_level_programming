@@ -1,15 +1,16 @@
 #include <stdio.h>
-#include "holberton.h"
 /**
-* main - print the name of the program followed by a new line.
-* @argc: argument count.
-* @argv: argument vector.
-*
-* Return: 0.
+* main - print name
+*@argc: int.
+*@argv: char.
+* Return: Always 0.
 */
 int main(int argc, char *argv[])
 {
-argc = argc;
-printf("%s\n", *argv);
+int i;
+for (i = 0; i < argc ; i++)
+{
+printf("%s\n", argv[i]);
+}
 return (0);
 }
